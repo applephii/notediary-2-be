@@ -24,7 +24,7 @@ steps:
   #
   # Keterangan:
   # "gcloud run deploy be-rest": Perintah yang digunakan untuk mendeploy service ke cloud run dengan nama "be-rest"
-  # "--image 'gcr.io/$PROJECT_ID/tcc-be-rest'": Image yang akan di-deploy
+  # "--image 'gcr.io/$PROJECT_ID/tcc-be'": Image yang akan di-deploy
   # "--timeout 1000s": Mengatur waktu maksimum loading menjadi 1000s
   # "--port 5000": Mengatur port yang akan digunakan (disamakan dengan port yg di-listen oleh server)
   # "--region us-central1": Memilih us-central1 sebagai region yg akan digunakan pada cloud run
@@ -36,7 +36,7 @@ steps:
         "deploy",
         "notediary-2-be",
         "--image",
-        "gcr.io/$PROJECT_ID/tcc-be-rest",
+        "gcr.io/$PROJECT_ID/tcc-be",
         "--timeout",
         "1000s",
         "--port",
