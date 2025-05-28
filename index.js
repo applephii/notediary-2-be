@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://notediary-2-fe-dot-h-08-451505.uc.r.appspot.com/",
+    origin: "https://notediary-2-fe-dot-h-08-451505.uc.r.appspot.com",
     credentials: true,
 }));
 // app.use(cors());
