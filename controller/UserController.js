@@ -179,20 +179,20 @@ async function loginUser(req, res) {
 
 
                 //HTTPS
-                // res.cookie("refreshToken", refreshToken, {
-                //     httpOnly: false,
-                //     secure: true,
-                //     sameSite: 'None',
-                //     maxAge: 24 * 60 * 60 * 1000
-                // });
+                res.cookie("refreshToken", refreshToken, {
+                    httpOnly: false,
+                    secure: true,
+                    sameSite: 'None',
+                    maxAge: 24 * 60 * 60 * 1000
+                });
 
                 //HTTP
-                res.cookie("refreshToken", refreshToken, {
-                    httpOnly: true,
-                    secure: false,
-                    sameSite: "lax",
-                    maxAge: 24 * 60 * 60 * 1000,
-                });
+                // res.cookie("refreshToken", refreshToken, {
+                //     httpOnly: true,
+                //     secure: false,
+                //     sameSite: "lax",
+                //     maxAge: 24 * 60 * 60 * 1000,
+                // });
 
                 return res.status(200).json({
                     status: "Success",
