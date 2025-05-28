@@ -1,0 +1,47 @@
+GET http://localhost:3000/notes
+
+###
+
+POST http://localhost:3000/add-note
+Content-Type: application/json
+
+{
+    "author": "yuu",
+    "title": "The C",
+    "notes": "Testing notes 3",
+    "userId": 1
+}
+
+###
+
+PUT http://localhost:3000/edit-note/1
+Content-Type: application/json
+
+{
+    "author": "yuu",
+    "title": "The C",
+    "notes": "Testing notes 1"
+}
+
+###
+
+DELETE http://localhost:3000/delete-note/2
+
+###
+
+GET http://localhost:3000/note/2
+
+###
+GET http://localhost:3000/user
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "yuuji3",
+    "email": "yuuji3@gmail.com",
+    "password": "123456"
+}
+###
+
