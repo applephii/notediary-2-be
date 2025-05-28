@@ -30,7 +30,7 @@ steps:
       [
         "run",
         "deploy",
-        "notediary-be-2",
+        "notediary-2-be",
         "--image",
         "gcr.io/$PROJECT_ID/tcc-be",
         "--timeout",
