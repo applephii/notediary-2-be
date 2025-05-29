@@ -70,6 +70,7 @@ async function register(req, res) {
             data: newUser
         });
     } catch (error) {
+        console.error("Registration Error:", error);
         res.status(400).json({ message: error.message });
     }
 }
